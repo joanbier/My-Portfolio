@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main>* {
+  color: white;
+  min-height: 100vh;
+  background-color: #222;
+  padding: 10px 30px;
+}
