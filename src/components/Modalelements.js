@@ -7,12 +7,13 @@ export const ModalWrapper = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
   .close-modal {
     position: absolute;
     z-index: 1001;
-    top: 20px;
-    right: 50px;
+    top: 50px;
+    right: 40px;
     font-size: 30px;
     cursor: pointer;
     transition: 0.2s;
@@ -25,9 +26,11 @@ export const ModalWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: black;
     width: 80%;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding-bottom: 20px;
     img {
       width: 100%;
     }

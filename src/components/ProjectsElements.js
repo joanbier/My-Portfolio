@@ -11,7 +11,7 @@ export const ProjectsContainer = styled.section`
       border-radius: 10px;
       width: 350px;
       margin: 30px;
-      box-shadow: 0 0 8px 1px #fff;
+      box-shadow: 0 0 15px 5px #444;
       img {
         width: 100%;
       }

@@ -1,0 +1,63 @@
+.form-wrapper {
+    text-align: left;
+    padding: 40px 0;
+}
+
+.form-wrapper .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+.form-wrapper .contact-form label>* {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.contact-form label {
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    resize: none;
+    overflow-y: auto;
+}
+
+
+.send-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* background: rgb(0, 159, 255); */
+    background: linear-gradient(90deg,
+            rgba(0, 159, 255, 0.3) 0%,
+            rgba(145, 0, 255, 0.3) 100%);
+    transition: 0.3s;
+    box-shadow: 0 0 15px 3px #000000;
+}
+
+.send-btn:hover {
+    box-shadow: 0 0 15px 3px #fff;
+}
+
+.error-message {
+    color: yellow;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.message-send {
+    color: yellowgreen;
+    margin: 20px auto;
+    text-align: center;
+}

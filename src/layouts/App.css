@@ -5,10 +5,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
-main>* {
-  color: white;
-  min-height: 100vh;
+body {
+  overflow-x: hidden;
   background-color: #222;
+  color: whitesmoke;
+}
+
+main>* {
   padding: 10px 30px;
   text-align: center;
+  min-height: 100vh;
+}
+
+#contact {
+  padding: 0;
+}
+
+#contact>* {
+  padding: 40px;
 }
