@@ -112,21 +112,31 @@ export const NavLink = styled(LinkS)`
 `;
 
 export const NavBtnLang = styled.div`
-  margin-right: 60px;
-  width: 100px;
   display: flex;
   justify-content: space-evenly;
-  & > * {
-    border-radius: 50%;
-    width: 30px;
+  margin-right: 60px;
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+
+  .flag-wrapper {
+    display: flex;
+    align-items: center;
     margin: 0 10px;
     cursor: pointer;
     transition: 0.4s;
-  }
-  & #pl-btn {
-    box-shadow: ${({ lang }) => (lang === "PL" ? "0 0 5px 3px white" : "none")};
-  }
-  & #eng-btn {
-    box-shadow: ${({ lang }) => (lang === "PL" ? "none" : "0 0 5px 3px white")};
+    .btn-lang {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    #pl-btn {
+      box-shadow: ${({ lang }) =>
+        lang === "PL" ? "0 0 5px 3px white" : "none"};
+    }
+    #eng-btn {
+      box-shadow: ${({ lang }) =>
+        lang === "PL" ? "none" : "0 0 5px 3px white"};
+    }
   }
 `;

@@ -49,7 +49,7 @@ const Header = props => {
           <SeeMore
             style={{ display: "block" }}
             to="about"
-            offset={-80}
+            offset={-60}
             smooth={true}
           >
             <button>

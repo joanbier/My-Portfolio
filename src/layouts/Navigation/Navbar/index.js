@@ -50,18 +50,24 @@ const Navigation = props => {
           </MobileIcon>
           <NavMenu>{menu}</NavMenu>
           <NavBtnLang lang={props.lang}>
-            <img
-              id="pl-btn"
-              onClick={e => props.changeLang(e)}
-              src={plFlag}
-              alt="polish flag"
-            />
-            <img
-              id="eng-btn"
-              onClick={e => props.changeLang(e)}
-              src={engFlag}
-              alt="english flag"
-            />
+            <div className="flag-wrapper">
+              <img
+                className="btn-lang"
+                id="pl-btn"
+                onClick={e => props.changeLang(e)}
+                src={plFlag}
+                alt="polish flag"
+              />
+            </div>
+            <div className="flag-wrapper">
+              <img
+                className="btn-lang"
+                id="eng-btn"
+                onClick={e => props.changeLang(e)}
+                src={engFlag}
+                alt="english flag"
+              />
+            </div>
           </NavBtnLang>
         </NavbarContainer>
       </Nav>
