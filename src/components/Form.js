@@ -17,9 +17,9 @@ class Form extends Component {
   };
 
   messages = {
-    subject_incorrected: "Tytuł musi być dłuzszy niz 3 znaki",
-    email_incorrected: "Brak @ w e-mailu",
-    textArea_incorrected: "Wiadomość musi być dłuzsza niz 6 znaków"
+    subject_incorrected: "The title must be longer than 3 characters",
+    email_incorrected: "Missing @ in the e-mail",
+    textArea_incorrected: "The message must be longer than 6 characters"
   };
 
   handleChange = e => {
@@ -60,7 +60,7 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const validation = this.formValidation();
-    console.log(validation);
+
     if (validation.correct) {
       this.sendEmail(e);
 
@@ -125,23 +125,29 @@ class Form extends Component {
   }
 
   render() {
+    const lang = this.props.lang;
+    const placeholder = this.props.placeholder;
     return (
       <div className="form-wrapper">
         <form className="contact-form" onSubmit={this.handleSubmit} noValidate>
           <label htmlFor="subject">
             {" "}
-            Subject
+            {lang === "PL" ? "Temat" : "Subject"}
             <input
               type="text"
               id="subject"
               name="subject"
               value={this.state.subject}
               onChange={this.handleChange}
-              placeholder="Job offer - Front-End Developer"
+              placeholder={
+                lang === "PL" ? placeholder[0].PL : placeholder[0].ENG
+              }
             />
             {this.state.errors.subject && (
               <span className="error-message">
-                {this.messages.subject_incorrected}
+                {lang === "PL"
+                  ? "Tytuł musi zawierać co najmniej 3 znaki"
+                  : this.messages.subject_incorrected}
               </span>
             )}
           </label>
@@ -154,19 +160,25 @@ class Form extends Component {
               name="email"
               value={this.state.email}
               onChange={this.handleChange}
-              placeholder="example@mail.com"
+              placeholder={
+                lang === "PL" ? placeholder[1].PL : placeholder[1].ENG
+              }
             />
             {this.state.errors.email && (
               <span className="error-message">
-                {this.messages.email_incorrected}
+                {lang === "PL"
+                  ? "Brak @ w e-mailu"
+                  : this.messages.email_incorrected}
               </span>
             )}
           </label>
           <label htmlFor="textarea">
             {" "}
-            Message
+            {lang === "PL" ? "Wiadomość" : "Message"}
             <textarea
-              placeholder="Hey! We would like to have you in our team. Check out our job offer and join us..."
+              placeholder={
+                lang === "PL" ? placeholder[2].PL : placeholder[2].ENG
+              }
               id="textarea"
               name="textarea"
               value={this.state.textarea}
@@ -176,12 +188,14 @@ class Form extends Component {
             ></textarea>
             {this.state.errors.textarea && (
               <span className="error-message">
-                {this.messages.textArea_incorrected}
+                {lang === "PL"
+                  ? "Wiadomość musi być dłuzsza niz 6 znaków"
+                  : this.messages.textArea_incorrected}
               </span>
             )}
           </label>
           <button className="send-btn" type="submit">
-            Wyślij
+            {lang === "PL" ? "Wyślij" : "Submit"}
           </button>
         </form>
         {this.state.message && (

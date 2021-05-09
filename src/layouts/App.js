@@ -8,7 +8,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    language: "PL"
+    language: "ENG"
   };
 
   handleChangeLanguage = e => {
@@ -36,10 +36,10 @@ class App extends Component {
         <Home lang={lang} changeLang={this.handleChangeLanguage} />
         <main>
           <About lang={lang} />
-          <Projects />
-          <Contact />
+          <Projects lang={lang} />
+          <Contact lang={lang} />
         </main>
-        <footer>{<Footer />}</footer>
+        <Footer />
       </div>
     );
   }

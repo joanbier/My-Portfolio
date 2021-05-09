@@ -1,23 +1,27 @@
 import React, { useState } from "react";
-import obrazek from "../images/header/bcg.jpg";
 import { Modal } from "../components/Modal";
-export const Card = () => {
+
+export const Card = ({ lang, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showMore = () => {
     setIsOpen(!isOpen);
   };
 
+  const { title, img } = content;
+
   return (
     <>
       <div className="card">
-        <img src={obrazek} alt="lol" />
+        <div className="lol" style={{ backgroundImage: `url(${img})` }}></div>
         <div className="text-wrapper">
-          <h3>Title fekfj j jio jj iij</h3>
-          <button onClick={showMore}>More</button>
+          <h3>{title}</h3>
+          <button onClick={showMore}>
+            {lang === "PL" ? "Więcej" : "More"}
+          </button>
         </div>
       </div>
-      {isOpen && <Modal click={showMore} />}
+      {isOpen && <Modal lang={lang} content={content} click={showMore} />}
     </>
   );
 };

@@ -12,8 +12,10 @@ export const ProjectsContainer = styled.section`
       width: 350px;
       margin: 30px;
       box-shadow: 0 0 15px 5px #444;
-      img {
+      .lol {
         width: 100%;
+        height: 220px;
+        background-size: cover;
       }
       .text-wrapper {
         display: flex;
