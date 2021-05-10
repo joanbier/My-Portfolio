@@ -54,7 +54,7 @@ export const ModalWrapper = styled.div`
       }
       a {
         display: inline-block;
-        width: 100px;
+        width: 120px;
         margin: 10px;
         padding: 10px 20px;
         text-decoration: none;

@@ -46,7 +46,7 @@ export const NavLogo = styled(LinkS)`
 export const MobileIcon = styled.div`
   display: none;
   &:hover {
-    color: orangered;
+    color: rgba(0, 159, 255, 1);
   }
   @media screen and (max-width: 768px) {
     display: block;

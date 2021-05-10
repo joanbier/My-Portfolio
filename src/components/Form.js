@@ -37,13 +37,13 @@ class Form extends Component {
     let textAreaVal = false;
     let correct = false;
 
-    if (subject.length > 3 && subject.indexOf(" ") === -1) {
+    if (subject.length > 3) {
       subjectVal = true;
     }
-    if (email.indexOf("@") !== -1) {
+    if (email.indexOf("@") !== -1 && email.indexOf(" ") === -1) {
       emailVal = true;
     }
-    if (textarea.length >= 6) {
+    if (textarea.length > 6) {
       textAreaVal = true;
     }
     if (subjectVal && emailVal && textAreaVal) {

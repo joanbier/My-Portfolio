@@ -16,10 +16,10 @@ export const Modal = props => {
             {props.lang === "PL" ? description.PL : description.ENG}
           </p>
           <a target="_blank" href={links.live} rel="noreferrer">
-            Live
+            {props.lang === "PL" ? "Na żywo" : "Live"}
           </a>
           <a target="_blank" href={links.code} rel="noreferrer">
-            Code
+            {props.lang === "PL" ? "Kod" : "Code"}
           </a>
         </div>
       </div>
