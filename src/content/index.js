@@ -48,7 +48,7 @@ const content = {
       ENG:
         "If you require any further information,feel free to mail me at j.biernat955@gmail.com or use the form below.",
       PL:
-        "Jeśli potrzebujesz więcej informacji, proszę skontaktuj się ze mną mailowo pod adresem j.biernat955@gmail.com lub uzyj ponizszego formularza"
+        "Jeśli potrzebujesz więcej informacji, proszę skontaktuj się ze mną mailowo pod adresem j.biernat955@gmail.com lub użyj poniższego formularza"
     },
     placeholder: [
       {
@@ -70,11 +70,12 @@ const content = {
   projects: [
     {
       title: "PhotoBlog",
+      id: "photoblog-1",
       img: process.env.PUBLIC_URL + "/assets/blog.png",
       alt: "Photography blog application",
       description: {
         PL:
-          "Aplikacja bazuje na dokumentacji Unsplash API. Aplikacja pozwala przeglądać rózne zdjęcia i uzyskać więcej w danej tematyce. Aplikacja umożliwia sortowanie pozycji według daty publikacji lub polubień, które zdobyły. Jeśli jesteś ciekawy autora wybranego zdjęcia, istnieje możliwość obejrzenia opisu tej osoby i przejrzenia jej portfolio klikając na nazwisko autora. Możesz także udostępnić dane zdjęcie na Facebooku, wyszukiwać zdjęć według zapytania lub uzyskać losowe.",
+          "Aplikacja bazuje na dokumentacji Unsplash API. Aplikacja pozwala przeglądać różne zdjęcia i uzyskać więcej w danej tematyce. Aplikacja umożliwia sortowanie pozycji według daty publikacji lub polubień, które zdobyły. Jeśli jesteś ciekawy autora wybranego zdjęcia, istnieje możliwość obejrzenia opisu tej osoby i przejrzenia jej portfolio klikając na nazwisko autora. Możesz także udostępnić dane zdjęcie na Facebooku, wyszukiwać zdjęć według zapytania lub uzyskać losowe.",
 
         ENG:
           "The Application is based on Unsplash API documentation. You can review the pictures, and browse more similar thanks to them ID. The app provides you to sort the items by publication date or likes which them gained. If you are curious about the author of the selected photo, there is possibility to see description of that person and review his or her portfolio clicking on the author name. You can also share pics on Facebook, search photos by your query or get a random one."
@@ -86,11 +87,12 @@ const content = {
     },
     {
       title: "WeatherApp",
+      id: "weatherapp-2",
       img: process.env.PUBLIC_URL + "/assets/weather-app.png",
       alt: "Weather application",
       description: {
         PL:
-          "Ta aplikacja pogodowa pozwala uzyskać prognozę pogody dla każdego miejsca na świecie. Mozna wyszukać dane miejsce lub wybrać miasto z 5 gotowych przycisków. Dostępna jest aktualna, godzinowa (następne 5h) i dzienna (następne 7 dni) prognoza pogody. Istnieją również szczegóły (takie jak ciśnienie, czas wschodu słońca, UV, wiatr itp.) dla aktualnej pogody.",
+          "Ta aplikacja pogodowa pozwala uzyskać prognozę pogody dla każdego miejsca na świecie. Można wyszukać dane miejsce lub wybrać miasto z 5 gotowych przycisków. Dostępna jest aktualna, godzinowa (następne 5h) i dzienna (następne 7 dni) prognoza pogody. Istnieją również szczegóły pogodowe takie jak ciśnienie, czas wschodu słońca, UV, wiatr itp.",
 
         ENG:
           "My weather aplication allows you to get weather forecast for every place in the world. It has an input to search city or 5 city buttons. There is a current, hourly(next 5h) and daily(next 7days) weather forecast. There are details (such as pressure, sunrise time, UV, wind as so on) for the current weather as well"
@@ -102,6 +104,7 @@ const content = {
     },
     {
       title: "ToDo List",
+      id: "todo-list-3",
       img: process.env.PUBLIC_URL + "/assets/to-do-app.png",
       alt: "ToDo list application",
       description: {
@@ -118,11 +121,12 @@ const content = {
     },
     {
       title: "Movie Search",
+      id: "movie-search-4",
       img: process.env.PUBLIC_URL + "/assets/movie-search.png",
       alt: "Movie search application",
       description: {
         PL:
-          "Przedstawiona aplikacja to wyszukiwarka filmów. Strona wysyła ządanie do serwera OMDb API (http://www.omdbapi.com). Aplikacja pozwala na pobranie informacji o danym filmie tzn. opis filmu (długi lub krótki), podgląd plakatu, dane o obsadzie, nagrodach, zyskach i tak dalej",
+          "Przedstawiona aplikacja to wyszukiwarka filmów. Strona wysyła żądanie do serwera OMDb API (http://www.omdbapi.com). Aplikacja pozwala na pobranie informacji o danym filmie tzn. opis filmu (długi lub krótki), podgląd plakatu, dane o obsadzie, nagrodach, zyskach i tak dalej",
 
         ENG:
           "The App presents a simple movie search application. The application sends a request to the OMDb API server (http://www.omdbapi.com). This website provides to review description (long or short) of the movie, see a poster, boxoffice, cast, awards and so on"
@@ -134,6 +138,7 @@ const content = {
     },
     {
       title: "Arkanoid",
+      id: "arkanoid-5",
       img: process.env.PUBLIC_URL + "/assets/arkanoid.png",
       alt: "Arkanoid application",
       description: {
@@ -150,6 +155,7 @@ const content = {
     },
     {
       title: "Online Shop",
+      id: "online-shop-6",
       img: process.env.PUBLIC_URL + "/assets/electro-shop.png",
       alt: "Application of online shop with electronic stuff",
       description: {
@@ -166,6 +172,7 @@ const content = {
     },
     {
       title: "Space Adventure",
+      id: "space-adventure-7",
       img: process.env.PUBLIC_URL + "/assets/space-adventure.png",
       alt:
         "Application built in react router, it contains spacecrafts to display",
@@ -183,6 +190,7 @@ const content = {
     },
     {
       title: "Martians attack",
+      id: "martians-attack-8",
       img: process.env.PUBLIC_URL + "/assets/martians-attack.png",
       alt: "Flying saucers, earth and moon in the spacevoid",
       description: {
@@ -199,6 +207,7 @@ const content = {
     },
     {
       title: "Calculator",
+      id: "calculator-9",
       img: process.env.PUBLIC_URL + "/assets/calculator.png",
       alt: "Calculator application",
       description: {
@@ -213,14 +222,15 @@ const content = {
     },
     {
       title: "Robot Animation",
+      id: "robot-10",
       img: process.env.PUBLIC_URL + "/assets/robot.png",
       alt: "Animation of the robot",
       description: {
         PL:
-          "Animacja wykorzystuje bibliotekę GSAP do animowania obrazu svg. Robot mruga, porusza nogami, a na jego tułowiu pojawia się kolorowy efekt fali.",
+          "Animacja wykorzystuje bibliotekę GSAP do animowania obrazu svg. Robot mruga, porusza nogami, a na jego tułowiu pojawia się kolorowy efekt fali. Dodatkowo wykonywany jest efekt pisania na maszynie",
 
         ENG:
-          "The animation uses the GSAP library to animate svg image. The robot blinks, moves its legs and there is a colorful wave effect on its chest."
+          "The animation uses the GSAP library to animate svg image. The robot blinks, moves its legs and there is a colorful wave effect on its chest. Additionaly there is a typing effect"
       },
       links: {
         live: "https://joanbier.github.io/Robot-Animation-SVG/",

@@ -13,7 +13,10 @@ export const Card = ({ lang, content }) => {
   return (
     <>
       <div className="card">
-        <div className="lol" style={{ backgroundImage: `url(${img})` }}></div>
+        <div
+          className="card-image"
+          style={{ backgroundImage: `url(${img})` }}
+        ></div>
         <div className="text-wrapper">
           <h3>{title}</h3>
           <button onClick={showMore}>

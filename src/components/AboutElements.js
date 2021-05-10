@@ -6,7 +6,7 @@ export const SectionWrapper = styled.section`
     margin: 20px 0;
   }
   .me-wrapper > * {
-    margin: 30px 0;
+    margin: 20px 0;
   }
 
   .my-photo {
@@ -17,6 +17,7 @@ export const SectionWrapper = styled.section`
   .hobby-wrapper {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 40px;
 
     .hobby-item {
       display: flex;
@@ -33,17 +34,24 @@ export const SectionWrapper = styled.section`
   }
 
   .description-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
     h3 {
       text-align: left;
-      margin-left: 10px;
+      margin-left: 15px;
     }
     .description {
       text-indent: 30px;
-      text-align: justify;
-      font-weight: 300;
-      margin: 10px;
+      text-align: left;
+      font-weight: 200;
+      margin: 15px auto;
       line-height: 1.5rem;
-      word-spacing: 2px;
+      @media screen and (min-width: 800px) and (orientation: landscape) {
+        & {
+          font-weight: 300;
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 
@@ -54,15 +62,23 @@ export const SectionWrapper = styled.section`
     padding: 10px;
     border: 2px solid rgba(0, 159, 255, 1);
     border-radius: 20px;
-    color: rgba(0, 159, 255, 1);
+    margin-bottom: 15px;
+    color: white;
     cursor: pointer;
-    background: transparent;
+    background-color: rgba(0, 159, 255, 1);
     transition: 0.3s;
 
     &:hover {
-      color: white;
-      background-color: rgba(0, 159, 255, 1);
+      color: rgba(0, 159, 255, 1);
+      background: transparent;
     }
+  }
+
+  hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #444;
   }
 
   .stack-container {
@@ -70,20 +86,41 @@ export const SectionWrapper = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     .stack-item-wrapper {
-      margin: 50px;
+      margin: 20px;
+      margin-bottom: 0;
       img {
-        margin-top: 20px;
-        width: 100px;
+        animation: pulse 3s linear infinite alternate;
+        margin: 10px;
+        width: 50px;
+        @keyframes pulse {
+          from {
+            transform: scale(1);
+          }
+          to {
+            transform: scale(1.3);
+          }
+        }
         cursor: pointer;
         transition: 0.4s;
         &:hover {
           filter: grayscale(100%);
           transform: scale(1.1);
         }
+        @media screen and (min-width: 400px) {
+          & {
+            width: 60px;
+            margin: 20px;
+          }
+        }
+        @media screen and (min-width: 500px) {
+          & {
+            margin: 30px;
+          }
+        }
       }
       p {
         font-weight: 500;
-        font-size: 22px;
+        font-size: 18px;
       }
     }
   }

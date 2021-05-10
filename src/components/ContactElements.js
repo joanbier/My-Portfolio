@@ -13,4 +13,9 @@ export const ContactWrapper = styled.section`
       rgba(82, 0, 144, 0.6) 100%
     );
   }
+  .contact-subtitle {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+  }
 `;

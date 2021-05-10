@@ -11,8 +11,10 @@ export const Modal = props => {
       <div className="modal-card">
         <img src={img} alt={alt} />
         <div className="text-modal-wrapper">
-          <h3>{title}</h3>
-          <p>{props.lang === "PL" ? description.PL : description.ENG}</p>
+          <h3 className="modal-title">{title}</h3>
+          <p className="modal-description">
+            {props.lang === "PL" ? description.PL : description.ENG}
+          </p>
           <a target="_blank" href={links.live} rel="noreferrer">
             Live
           </a>

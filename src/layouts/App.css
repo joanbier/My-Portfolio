@@ -17,6 +17,18 @@ main>* {
   min-height: 100vh;
 }
 
+.section-title {
+  font-size: 2.2rem;
+  margin: 20px;
+  font-weight: 300;
+  color: cornsilk;
+}
+
+.stack-title {
+  font-size: 1.6rem;
+  color: white;
+}
+
 #contact {
   padding: 0;
 }

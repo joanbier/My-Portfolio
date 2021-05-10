@@ -16,7 +16,7 @@ const SideBar = ({ isOpen, toggle, lang }) => {
       key={`${index}-${li.name}`}
       to={li.path}
       spy={true}
-      offset={-80}
+      offset={-60}
       smooth={true}
       onClick={toggle}
     >

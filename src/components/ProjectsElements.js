@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.section`
-  padding: 10px;
+  padding: 5px;
+  padding-bottom: 100px;
   .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -9,13 +10,35 @@ export const ProjectsContainer = styled.section`
     .card {
       overflow: hidden;
       border-radius: 10px;
-      width: 350px;
+      width: 100vw;
+      margin: 25px 15px !important;
       margin: 30px;
       box-shadow: 0 0 15px 5px #444;
-      .lol {
+      @media screen and (min-width: 568px) and (orientation: landscape) {
+        & {
+          width: 60vw;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        & {
+          width: 45vw;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        & {
+          width: 30vw;
+        }
+      }
+      .card-image {
         width: 100%;
         height: 220px;
         background-size: cover;
+        background-position: center top;
+        @media screen and (min-width: 600px) {
+          & {
+            height: 300px;
+          }
+        }
       }
       .text-wrapper {
         display: flex;

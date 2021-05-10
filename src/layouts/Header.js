@@ -7,6 +7,7 @@ import Particles from "react-particles-js";
 
 const Header = props => {
   const { greeting, subtitle, button, typicalEng, typicalPl } = content.header;
+
   return (
     <HeaderWrapper>
       <div className="black-cover">
@@ -43,7 +44,6 @@ const Header = props => {
               typingDelay={1000}
               eraseDelay={2000}
               text={props.lang === "PL" ? typicalPl : typicalEng}
-              style={{ fontSize: "18px" }}
             />
           </div>
           <SeeMore

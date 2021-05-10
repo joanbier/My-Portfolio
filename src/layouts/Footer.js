@@ -39,11 +39,16 @@ const Footer = () => {
           <FaGithub />
         </a>
       </div>
+
       <hr />
-      <span className="copyright">
-        &copy; Copyright {new Date().getFullYear()} - Joann Biernat | All Rights
-        Reserved
-      </span>
+      <div className="copyright">
+        <span>
+          Coded with ❤️ by Joanna Biernat. Thank you for visiting my page.
+        </span>
+        <span>
+          &copy; Copyright {new Date().getFullYear()} All Rights Reserved
+        </span>
+      </div>
     </FooterContainer>
   );
 };

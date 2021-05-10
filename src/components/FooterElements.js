@@ -25,9 +25,15 @@ export const FooterContainer = styled.footer`
     border: none;
     height: 1px;
     background-color: #444;
+    margin: 10px;
   }
   .copyright {
     color: #777;
     font-size: 13px;
+    text-align: center;
+    & > * {
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 `;

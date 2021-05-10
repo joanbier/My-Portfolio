@@ -18,13 +18,13 @@ export const HeaderWrapper = styled.header`
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
+    width: 90%;
     transform: translate(-50%, -50%);
-    font-size: 15px;
+    font-size: 1.2rem;
     color: white;
   }
   & .info-container > * {
-    margin: 20px;
+    margin: 15px;
   }
   & .subtitle {
     font-weight: 100;
@@ -32,7 +32,28 @@ export const HeaderWrapper = styled.header`
   & .typing-container {
     height: 50px;
     padding: 5px;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  @media screen and (min-width: 568px) and (orientation: landscape) {
+    .info-container {
+      font-size: 0.8rem;
+    }
+    .typing-container {
+      height: 0px;
+      padding: 0px;
+      font-size: 1.1rem;
+    }
+  }
+  @media screen and (min-width: 800px) and (orientation: landscape) {
+    .info-container {
+      font-size: 1.3rem;
+    }
+    .typing-container {
+      height: 0px;
+      padding: 0px;
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -40,10 +61,26 @@ export const SeeMore = styled(Link)`
   display: block;
   position: absolute;
   bottom: -100px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  width: 50%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 auto !important;
+
+  @media screen and (min-width: 568px) and (orientation: landscape) {
+    & {
+      bottom: -75px;
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 800px) and (orientation: landscape) {
+    & {
+      bottom: -200px;
+      width: 40%;
+    }
+  }
+
   & button {
     width: 100%;
     padding: 10px;

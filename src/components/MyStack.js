@@ -29,7 +29,9 @@ export const MyStack = props => {
 
   return (
     <div>
-      <h3>{props.lang === "PL" ? "Umiejętności" : "My Stack"}</h3>
+      <h3 className="section-title stack-title">
+        {props.lang === "PL" ? "Umiejętności" : "My Stack"}
+      </h3>
       <div className="stack-container">{stackItem}</div>
     </div>
   );
