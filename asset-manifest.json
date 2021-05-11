@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.895883b3.chunk.css",
-    "main.js": "/My-Portfolio/static/js/main.9a77487a.chunk.js",
-    "main.js.map": "/My-Portfolio/static/js/main.9a77487a.chunk.js.map",
+    "main.js": "/My-Portfolio/static/js/main.7f473b96.chunk.js",
+    "main.js.map": "/My-Portfolio/static/js/main.7f473b96.chunk.js.map",
     "runtime-main.js": "/My-Portfolio/static/js/runtime-main.8979122b.js",
     "runtime-main.js.map": "/My-Portfolio/static/js/runtime-main.8979122b.js.map",
     "static/js/2.fb7bf74f.chunk.js": "/My-Portfolio/static/js/2.fb7bf74f.chunk.js",
@@ -12,7 +12,6 @@
     "static/js/2.fb7bf74f.chunk.js.LICENSE.txt": "/My-Portfolio/static/js/2.fb7bf74f.chunk.js.LICENSE.txt",
     "static/media/bcg-large.ccad2c09.jpg": "/My-Portfolio/static/media/bcg-large.ccad2c09.jpg",
     "static/media/bcg-medium.ad9ba121.jpg": "/My-Portfolio/static/media/bcg-medium.ad9ba121.jpg",
-    "static/media/bcg-small.1cb829b8.jpg": "/My-Portfolio/static/media/bcg-small.1cb829b8.jpg",
     "static/media/bootstrap.d180fe4c.svg": "/My-Portfolio/static/media/bootstrap.d180fe4c.svg",
     "static/media/css.dbd31fe1.svg": "/My-Portfolio/static/media/css.dbd31fe1.svg",
     "static/media/eng.2d19fed4.svg": "/My-Portfolio/static/media/eng.2d19fed4.svg",
@@ -30,6 +29,6 @@
     "static/js/runtime-main.8979122b.js",
     "static/js/2.fb7bf74f.chunk.js",
     "static/css/main.895883b3.chunk.css",
-    "static/js/main.9a77487a.chunk.js"
+    "static/js/main.7f473b96.chunk.js"
   ]
 }
