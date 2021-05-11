@@ -16,10 +16,10 @@ export const ProjectsContainer = styled.section`
       box-shadow: 0 0 15px 5px #444;
       @media screen and (min-width: 568px) and (orientation: landscape) {
         & {
-          width: 60vw;
+          width: 70vw;
         }
       }
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 700px) {
         & {
           width: 45vw;
         }
@@ -31,12 +31,18 @@ export const ProjectsContainer = styled.section`
       }
       .card-image {
         width: 100%;
-        height: 220px;
-        background-size: cover;
+        height: 230px;
+        background-size: 100%;
         background-position: center top;
-        @media screen and (min-width: 600px) {
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover {
+          background-size: 110%;
+          filter: contrast(110%);
+        }
+        @media screen and (min-width: 800px) {
           & {
-            height: 300px;
+            height: 260px;
           }
         }
       }

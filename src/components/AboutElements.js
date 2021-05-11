@@ -117,6 +117,12 @@ export const SectionWrapper = styled.section`
             margin: 30px;
           }
         }
+        @media screen and (min-width: 1024px) {
+          & {
+            margin: 50px;
+            width: 70px;
+          }
+        }
       }
       p {
         font-weight: 500;

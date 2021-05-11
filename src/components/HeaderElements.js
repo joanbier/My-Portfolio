@@ -1,13 +1,21 @@
 import styled from "styled-components";
-import bcg from "../images/header/bcg.jpg";
+import bcgS from "../images/header/bcg-small.jpg";
+import bcgM from "../images/header/bcg-medium.jpg";
+import bcgL from "../images/header/bcg-large.jpg";
 import { Link } from "react-scroll";
 
 export const HeaderWrapper = styled.header`
   position: relative;
   height: 100vh;
-  background-image: url(${bcg});
+  background-image: url(${bcgS});
   background-size: cover;
   background-position: left;
+  @media screen and (min-width: 800px) {
+    background-image: url(${bcgM});
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(${bcgL});
+  }
 
   & .black-cover {
     height: 100vh;

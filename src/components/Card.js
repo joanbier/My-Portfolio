@@ -14,6 +14,7 @@ export const Card = ({ lang, content }) => {
     <>
       <div className="card">
         <div
+          onClick={showMore}
           className="card-image"
           style={{ backgroundImage: `url(${img})` }}
         ></div>

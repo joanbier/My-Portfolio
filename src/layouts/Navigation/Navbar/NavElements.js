@@ -76,22 +76,14 @@ export const NavItem = styled.li`
   height: 50px;
   margin: 0px 5px;
 
-  &:nth-child(1) .active {
+  &:nth-child(odd) .active {
     transition: 0.4s ease-in-out;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid rgba(0, 159, 255, 1);
   }
 
-  &:nth-child(2) .active {
+  &:nth-child(even) .active {
     transition: 0.4s ease-in-out;
-    border-bottom: 3px solid deepskyblue;
-  }
-  &:nth-child(3) .active {
-    transition: 0.4s ease-in-out;
-    border-bottom: 3px solid salmon;
-  }
-  &:nth-child(4) .active {
-    transition: 0.4s ease-in-out;
-    border-bottom: 3px solid yellowgreen;
+    border-bottom: 3px solid rgb(121, 98, 251);
   }
 `;
 
@@ -107,7 +99,7 @@ export const NavLink = styled(LinkS)`
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   &:hover {
-    color: orange;
+    color: rgba(0, 159, 255, 1);
   }
 `;
 
