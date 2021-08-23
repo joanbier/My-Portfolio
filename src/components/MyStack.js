@@ -7,12 +7,14 @@ import sass from "../images/tech-stack/sass.svg";
 import npm from "../images/tech-stack/npm.svg";
 import bootstrap from "../images/tech-stack/bootstrap.svg";
 import git from "../images/tech-stack/git.svg";
+import ts from "../images/tech-stack/typescript.svg";
 
 const stackArray = [
   { name: "HTML", img: html, alt: "html logo" },
   { name: "CSS", img: css, alt: "css logo" },
   { name: "JS (ES6+)", img: js, alt: "javascript logo" },
   { name: "React", img: react, alt: "react logo" },
+  { name: "TypeScript", img: ts, alt: "typescript logo" },
   { name: "Sass", img: sass, alt: "sass logo" },
   { name: "npm", img: npm, alt: "npm logo" },
   { name: "Bootstrap", img: bootstrap, alt: "bootstrap logo" },

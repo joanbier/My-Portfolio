@@ -39,9 +39,9 @@ const content = {
   },
   about: {
     ENG:
-      "My name is Joanna Biernat and I would like to become a professional Front-end Developer. My adventure with programming started about 2 years ago. I try to keep up with standards. Developing accessible, responsive, optimized websites with SEO and performance in mind is a priority for me. My main focus lies on the front-end, JavaScript and React/Angular development. I graduated the 'Basic JavaScript + React' course at CODE:ME academy in Gdańsk. I finished a few interesting courses on Udemy platform as well. In the future, I want to learn Angular.js and get know something about back-end development. Currently, I am looking for my first job in IT sector, therefore I still foster and improve my programming skills of JavaScript.",
+      "My name is Joanna Biernat and I would like to become a professional Front-end Developer. My adventure with programming started about 2 years ago. I try to keep up with standards. Developing accessible, responsive, optimized websites with SEO and performance in mind is a priority for me. My main focus lies on the front-end, JavaScript and React/Angular development. I graduated the 'Basic JavaScript + React' course at CODE:ME academy in Gdańsk. I finished a few interesting courses on Udemy platform as well. I am participating in the MegaK project run by Bartłomiej Borowczyk and Jakub Król. The course lasts 12 months, the topics of the course are mainly Node.js, Express, databases, TypeScript and React. Currently, I am looking for my first job in IT sector, therefore I still foster and improve my programming skills of JavaScript.",
     PL:
-      "Nazywam się Joanna Biernat i chciałabym zostać zawodowym Front-end Developerem. Moja przygoda z programowaniem zaczęła się około 2 lata temu. Staram się trzymać wszelkich standardów. Tworzenie dostępnych, responsywnych, zoptymalizowanych stron internetowych z myślą o SEO i wydajności jest dla mnie priorytetem. Skupiam się głównie na rozwoju front-endu, JavaScript i React / Angular. Ukończyłam kurs 'JavaScript + React od podstaw' fundancji CODE:ME z siedzibą w Gdańsku. Przerobiłam równiez kilka interesujących kursów na platformie Udemy. Moje plany na przyszłość to zapoznanie się z frameworkiem Angular oraz zaznajomieniem się z podstawami backendu. Obecnie poszukuję swojej pierwszej pracy w sektorze IT, daltego cały czas staram się pielęgnować i ulepszać moje zdolności programistyczne w języku JavaScript"
+      "Nazywam się Joanna Biernat i chciałabym zostać zawodowym Front-end Developerem. Moja przygoda z programowaniem zaczęła się około 2 lata temu. Staram się trzymać wszelkich standardów. Tworzenie dostępnych, responsywnych, zoptymalizowanych stron internetowych z myślą o SEO i wydajności jest dla mnie priorytetem. Skupiam się głównie na rozwoju front-endu, JavaScript i React / Angular. Ukończyłam kurs 'JavaScript + React od podstaw' fundancji CODE:ME z siedzibą w Gdańsku. Przerobiłam równiez kilka interesujących kursów na platformie Udemy. Aktualnie uczestniczę w projekcie MegaK, który jest prowadzony przez Bartłomieja Borowczyka i Jakuba Króla. Kurs trwa 12 miesięcy, tematyka kursu to przede wszystkim Node.js, Express, bazy danych, TypeScript i React. Obecnie poszukuję swojej pierwszej pracy w sektorze IT, dlatego cały czas staram się pielęgnować i ulepszać moje zdolności programistyczne w języku JavaScript"
   },
   contact: {
     subtitle: {
@@ -68,6 +68,23 @@ const content = {
     ]
   },
   projects: [
+    {
+      title: "Dog Breeds Finder",
+      id: "dogbreeds-0",
+      img: process.env.PUBLIC_URL + "/assets/dog-app.png",
+      alt: "Dog breeds finder",
+      description: {
+        PL:
+          "Aplikacja wyświetla wszystkie dostępne rasy psów z Dog API https://dog.ceo/dog-api/. Strona pozwola filtrować interesujące nas rasy, po kliknięciu w dany przycisk pobierane są trzy zdjęcia wybranej rasy. Projekt został napisany w języku TypeScript.",
+
+        ENG:
+          "The app displays all available dog breeds from the Dog API https://dog.ceo/dog-api/. The site allows you to filter the breed, after clicking on the button, three photos of the selected breed are downloaded. The project is written in TypeScript."
+      },
+      links: {
+        live: "https://4nqp7.csb.app",
+        code: "https://github.com/joanbier/Dog-Breed-Finder"
+      }
+    },
     {
       title: "PhotoBlog",
       id: "photoblog-1",
