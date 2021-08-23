@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.895883b3.chunk.css",
-    "main.js": "/My-Portfolio/static/js/main.7f473b96.chunk.js",
-    "main.js.map": "/My-Portfolio/static/js/main.7f473b96.chunk.js.map",
+    "main.js": "/My-Portfolio/static/js/main.3dce1776.chunk.js",
+    "main.js.map": "/My-Portfolio/static/js/main.3dce1776.chunk.js.map",
     "runtime-main.js": "/My-Portfolio/static/js/runtime-main.8979122b.js",
     "runtime-main.js.map": "/My-Portfolio/static/js/runtime-main.8979122b.js.map",
     "static/js/2.fb7bf74f.chunk.js": "/My-Portfolio/static/js/2.fb7bf74f.chunk.js",
@@ -23,12 +23,13 @@
     "static/media/npm.f864fefa.svg": "/My-Portfolio/static/media/npm.f864fefa.svg",
     "static/media/pl.75da69ba.svg": "/My-Portfolio/static/media/pl.75da69ba.svg",
     "static/media/react.ecaaa409.svg": "/My-Portfolio/static/media/react.ecaaa409.svg",
-    "static/media/sass.50ac5640.svg": "/My-Portfolio/static/media/sass.50ac5640.svg"
+    "static/media/sass.50ac5640.svg": "/My-Portfolio/static/media/sass.50ac5640.svg",
+    "static/media/typescript.7c2e5f59.svg": "/My-Portfolio/static/media/typescript.7c2e5f59.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8979122b.js",
     "static/js/2.fb7bf74f.chunk.js",
     "static/css/main.895883b3.chunk.css",
-    "static/js/main.7f473b96.chunk.js"
+    "static/js/main.3dce1776.chunk.js"
   ]
 }
