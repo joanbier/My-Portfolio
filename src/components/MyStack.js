@@ -3,6 +3,7 @@ import html from "../images/tech-stack/html.svg";
 import css from "../images/tech-stack/css.svg";
 import js from "../images/tech-stack/javascript.svg";
 import react from "../images/tech-stack/react.svg";
+
 import sass from "../images/tech-stack/sass.svg";
 import npm from "../images/tech-stack/npm.svg";
 import bootstrap from "../images/tech-stack/bootstrap.svg";
